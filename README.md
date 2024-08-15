@@ -1,9 +1,6 @@
-Natürlich! Hier ist eine ausführlichere README-Datei mit Schwerpunkt auf dem Design für dein Projekt "Fotogram":
-
-````markdown
 # Fotogram
 
-![Fotogram Logo](link-to-your-logo-image)
+![Fotogram Logo](https://raw.githubusercontent.com/mariokreitz/DA_Fotogram/main/preview.png)
 
 ## Projektübersicht
 
@@ -37,9 +34,8 @@ So kannst du das Projekt lokal auf deinem Rechner ausführen:
 1. Klone das Repository:
 
    ```bash
-   git clone https://github.com/dein-benutzername/DA_Fotogram.git
+   git clone https://github.com/mariokreitz/DA_Fotogram.git
    ```
-````
 
 2. Wechsle in das Projektverzeichnis:
 
@@ -71,7 +67,7 @@ Das Layout der Fotogalerie verwendet ein flexibles Raster, das auf den Prinzipie
 
 ## Mitwirkende
 
-- **[Dein Name](https://github.com/dein-benutzername)** - Projektinitiator und Hauptentwickler
+- **[Mario Kreitz](https://github.com/mariokreitz)** - Projektinitiator und Hauptentwickler
 
 ## Lizenz
 
@@ -79,25 +75,15 @@ Dieses Projekt ist lizenziert unter der [MIT-Lizenz](LICENSE).
 
 ## Kontakt
 
-Für Fragen, Anregungen oder Feedback, kontaktiere mich bitte unter [deine-email@example.com](mailto:deine-email@example.com).
+Für Fragen, Anregungen oder Feedback, kontaktiere mich bitte unter [mario.kreitz@web.de](mailto:mario.kreitz@web.de).
 
 ## Screenshots
 
 Hier sind einige Screenshots, die das Design und die Benutzeroberfläche der Anwendung veranschaulichen:
 
-![Screenshot 1](link-to-screenshot1)
-![Screenshot 2](link-to-screenshot2)
+![Screenshot 1](https://raw.githubusercontent.com/mariokreitz/DA_Fotogram/main/preview_1.png)
+![Screenshot 2](https://raw.githubusercontent.com/mariokreitz/DA_Fotogram/main/preview_2.png)
 
 ---
 
 Vielen Dank für dein Interesse an Fotogram! Wenn dir das Projekt gefällt oder du Vorschläge hast, freue ich mich über Rückmeldungen und Anregungen.
-
-```
-
-### Hinweise:
-- **Logo und Screenshots**: Ersetze `link-to-your-logo-image`, `link-to-screenshot1`, und `link-to-screenshot2` durch die tatsächlichen URLs oder Pfade zu den Bildern.
-- **Kontakt**: Stelle sicher, dass deine Kontaktdaten aktuell sind.
-- **Funktionen**: Füge zukünftige Funktionen oder geplante Erweiterungen hinzu, wenn du diese bereits geplant hast.
-
-Diese README-Datei sollte den Design-Schwerpunkt und die Details deines Projekts klar und umfassend darstellen.
-```
