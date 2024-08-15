@@ -1,0 +1,986 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./favicon_fotogram.png" />
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="gupter-regular">
+    <!-- fixed header / navbar -->
+    <header
+      class="container fixed left-0 right-0 top-0 z-40 mx-auto max-w-screen-2xl p-3"
+    >
+      <nav
+        class="animate-fade-down rounded-full bg-white bg-opacity-30 px-4 py-3 backdrop-blur-[10px] lg:px-0"
+      >
+        <div
+          class="flex animate-fade-down items-center justify-between animate-delay-500"
+        >
+          <a
+            href="./index.html"
+            class="justify-centera flex items-center gap-5 lg:ml-4"
+          >
+            <img
+              class="w-10 animate-pulse fill-black animate-normal animate-fill-both animate-infinite animate-ease-linear"
+              src="./favicon_fotogram.png"
+              alt="fotogram logo"
+            />
+            <p
+              class="animate-wiggle text-xl font-bold animate-delay-500 animate-normal animate-duration-[2000ms] animate-fill-both animate-infinite animate-ease-in-out"
+            >
+              Fotogram
+            </p>
+          </a>
+          <button
+            type="button"
+            id="menu-button"
+            class="z-50 mr-4 block animate-fade-down text-black animate-delay-500 focus:outline-none lg:hidden"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="menu"
+            class="absolute left-0 right-0 top-20 mx-4 hidden rounded-3xl bg-white py-4 backdrop-blur-md lg:relative lg:top-0 lg:flex lg:w-auto lg:items-center lg:bg-opacity-0 lg:py-0 lg:shadow-inner-xl"
+          >
+            <a
+              href="#hero"
+              class="mx-3 block px-4 py-2 text-lg text-black hover:rounded-full hover:bg-white hover:bg-opacity-30 lg:mt-0"
+              >Home</a
+            >
+            <a
+              href="#highlights"
+              class="mx-3 block px-4 py-2 text-lg text-black hover:rounded-full hover:bg-white hover:bg-opacity-30 lg:mt-0"
+              >Highlights</a
+            >
+            <a
+              href="#social-media"
+              class="mx-3 block px-4 py-2 text-lg text-black hover:rounded-full hover:bg-white hover:bg-opacity-30 lg:mt-0"
+              >About</a
+            >
+            <button
+              onclick="location.href='#gallery'"
+              type="button"
+              class="mx-3 rounded-full bg-medium-purple bg-opacity-60 px-6 py-3 text-lg font-bold text-white shadow-2xl hover:bg-opacity-90 lg:mx-0"
+            >
+              Join Us
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section
+      id="hero"
+      class="h-screen animate-fade bg-hero bg-cover bg-fixed bg-center bg-no-repeat text-white animate-delay-0"
+    >
+      <main class="flex h-full flex-col items-center justify-end p-10">
+        <h1
+          class="mb-10 animate-fade text-4xl font-bold animate-delay-500 xs:text-5xl md:text-7xl lg:text-9xl"
+        >
+          Capture Life
+        </h1>
+        <p
+          class="mb-12 animate-fade text-center text-xl animate-delay-500 xs:text-2xl lg:text-4xl"
+        >
+          Unleash your creativity and share your wold through stunnung photos!
+        </p>
+        <button
+          type="button"
+          onclick="window.open('./public/gallery.html', '_self', 'noopener, noreferrer');"
+          class="mb-20 rounded-full border-2 px-6 py-3 text-xl shadow-inner-xl hover:scale-105 hover:shadow-lg hover:shadow-gray-400 active:scale-100 xs:text-2xl md:mb-40 lg:text-3xl xl:mb-60"
+        >
+          Get Started
+        </button>
+      </main>
+    </section>
+    <!-- meet creator -->
+    <section id="creator" class="mx-auto max-w-screen-2xl px-4 py-16 xs:py-20">
+      <h2
+        class="mb-10 text-center text-3xl font-bold xs:mb-14 xs:text-4xl md:text-5xl lg:text-6xl"
+      >
+        Meet Creator
+      </h2>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <a
+          href="https://pixabay.com/de/users/bimamancity-39490047/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8257787"
+          target="_blank"
+          class="block p-2"
+        >
+          <img
+            src="./public/images/creator/profile_BimaMancity.jpg"
+            alt="profile picture from BimaMancity"
+            class="h-auto w-full transform rounded-lg shadow-2xl transition-transform hover:scale-95"
+          />
+          <div class="mt-4 text-center">
+            <h3 class="text-2xl font-bold">BimaMancity</h3>
+            <p class="text-xl">Yes. I&apos;m 16</p>
+          </div>
+        </a>
+        <a
+          href="https://pixabay.com/de/users/davidclode-43394210/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8928741"
+          target="_blank"
+          class="block p-2"
+        >
+          <img
+            src="./public/images/creator/profile_davidClodejpg.jpg"
+            alt="profile picture from DavidClode"
+            class="h-auto w-full transform rounded-lg shadow-2xl transition-transform hover:scale-95"
+          />
+          <div class="mt-4 text-center">
+            <h3 class="text-2xl font-bold">DavidClode</h3>
+            <p class="text-xl">I enjoy nature</p>
+          </div>
+        </a>
+        <a
+          href="https://pixabay.com/de/users/komissaralex-25667757/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7008147"
+          target="_blank"
+          class="block p-2"
+        >
+          <img
+            src="./public/images/creator/profile_komisaralex.jpg"
+            alt="profile picture from komissaralex"
+            class="h-auto w-full transform rounded-lg shadow-2xl transition-transform hover:scale-95"
+          />
+          <div class="mt-4 text-center">
+            <h3 class="text-2xl font-bold">komissaralex</h3>
+            <p class="text-xl">aka Alexy Komissarov</p>
+          </div>
+        </a>
+        <a
+          href="https://pixabay.com/de/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2607298"
+          target="_blank"
+          class="block p-2"
+        >
+          <img
+            src="./public/images/creator/profile_stockSnap.jpg"
+            alt="profile picture from stocksnap"
+            class="h-auto w-full transform rounded-lg shadow-2xl transition-transform hover:scale-95"
+          />
+          <div class="mt-4 text-center">
+            <h3 class="text-2xl font-bold">StockSnap</h3>
+            <p class="text-xl">Pixabay Creator</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- stats section -->
+    <section id="stats" class="mx-auto max-w-screen-2xl px-4 py-16 xs:py-20">
+      <main class="grid grid-cols-1 md:grid-cols-3">
+        <div class="text-center">
+          <h2
+            class="counter text-5xl font-black text-medium-purple md:text-6xl"
+          >
+            1000
+          </h2>
+          <p class="mb-20 mt-4 text-2xl md:text-3xl">Happy Users</p>
+        </div>
+        <div class="text-center">
+          <h2
+            class="counter text-5xl font-black text-medium-purple md:text-6xl"
+          >
+            500000
+          </h2>
+          <p class="mb-20 mt-4 text-2xl md:text-3xl">Photo Shared</p>
+        </div>
+        <div class="text-center">
+          <h2
+            class="counter text-5xl font-black text-medium-purple md:text-6xl"
+          >
+            99
+          </h2>
+          <p class="mb-20 mt-4 text-2xl md:text-3xl">Satisfaction Guaranteed</p>
+        </div>
+      </main>
+    </section>
+    <!-- photo slider section -->
+    <section id="highlights" class="overflow-hidden bg-remy">
+      <main class="w-full px-4 py-24">
+        <h2
+          class="text-center text-3xl font-bold xs:text-5xl md:text-5xl lg:text-6xl"
+        >
+          Explore Our Stunning Gallery
+        </h2>
+        <div class="slider-container mx-auto mt-10">
+          <div class="flex animate-infinite-slider" id="slider">
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_1.jpg"
+                alt="Bild 1"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_2.jpg"
+                alt="Bild 2"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_3.jpg"
+                alt="Bild 3"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_4.jpg"
+                alt="Bild 4"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_5.jpg"
+                alt="Bild 5"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_6.jpg"
+                alt="Bild 6"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_7.jpg"
+                alt="Bild 7"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_8.jpg"
+                alt="Bild 8"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_9.jpg"
+                alt="Bild 9"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_1.jpg"
+                alt="Bild 1"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_2.jpg"
+                alt="Bild 2"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_3.jpg"
+                alt="Bild 3"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_4.jpg"
+                alt="Bild 4"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_5.jpg"
+                alt="Bild 5"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_6.jpg"
+                alt="Bild 6"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_7.jpg"
+                alt="Bild 7"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_8.jpg"
+                alt="Bild 8"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_9.jpg"
+                alt="Bild 9"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_1.jpg"
+                alt="Bild 1"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_2.jpg"
+                alt="Bild 2"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="./public/images/pixabay_img_3.jpg"
+                alt="Bild 3"
+                class="aspect-[4/5] w-11/12 rounded-3xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- hot news section -->
+    <section class="mx-auto max-w-screen-2xl px-4 py-20 xs:py-32 lg:max-w-full">
+      <h2
+        class="mb-12 mt-4 px-14 text-center text-3xl font-bold xs:text-5xl md:text-5xl"
+      >
+        Current Photo News
+      </h2>
+      <main class="grid grid-cols-1 gap-8 md:grid-cols-2 2xl:grid-cols-4">
+        <div class="rounded-3xl p-4 shadow-lg">
+          <img
+            class="aspect-[4/5] w-full rounded-3xl object-cover"
+            src="./public/images/foto_news/foto_welt.jpg"
+            alt="foto welt"
+          />
+          <h2
+            class="mt-4 pr-20 text-left text-2xl font-bold xs:pr-32 md:pr-28 md:text-3xl"
+          >
+            News from the World of Photography
+          </h2>
+          <h3 class="my-2 text-xl md:text-2xl">2024-08-08</h3>
+          <p class="mb-4 text-xl md:text-2xl">
+            Discover the latest trends and techniques in photography that will
+            ignite your creativity!
+          </p>
+          <button
+            class="my-2 rounded-full bg-medium-purple px-6 py-3 text-lg font-bold text-white shadow-inner-xl hover:bg-opacity-90 md:text-xl"
+            type="button"
+          >
+            NOW
+          </button>
+        </div>
+        <div class="rounded-3xl p-4 shadow-lg">
+          <img
+            class="aspect-[4/5] w-full rounded-3xl object-cover"
+            src="./public/images/foto_news/foto_wettbewerb.jpg"
+            alt="foto wettbewerb"
+          />
+          <h2
+            class="mb-2 mt-4 pr-20 text-left text-2xl font-bold xs:pr-32 md:text-3xl"
+          >
+            Photo Contest: Join Now!
+          </h2>
+          <h3 class="my-2 text-xl md:text-2xl">2024-0808</h3>
+          <p class="mb-4 text-xl md:text-2xl">
+            Take part in our exciting photo contest and win amazing prizes!
+          </p>
+          <button
+            class="my-2 rounded-full bg-medium-purple px-6 py-3 text-lg font-bold text-white shadow-inner-xl hover:bg-opacity-90 md:text-xl"
+            type="button"
+          >
+            NOW
+          </button>
+        </div>
+        <div class="rounded-3xl p-4 shadow-lg">
+          <img
+            class="aspect-[4/5] w-full rounded-3xl object-cover"
+            src="./public/images/foto_news/foto_tips.jpg"
+            alt="foto tipps"
+          />
+          <h2
+            class="mt-4 pr-20 text-left text-2xl font-bold xs:pr-32 md:text-3xl"
+          >
+            The Best Photography Tips for 2024
+          </h2>
+          <h3 class="my-2 text-xl md:text-2xl">2024-08-08</h3>
+          <p class="mb-4 text-xl md:text-2xl">
+            Get top tips from professionals to take your photography to the next
+            level!
+          </p>
+          <button
+            class="my-2 rounded-full bg-medium-purple px-6 py-3 text-lg font-bold text-white shadow-inner-xl hover:bg-opacity-90 md:text-xl"
+            type="button"
+          >
+            NOW
+          </button>
+        </div>
+        <div class="rounded-3xl p-4 shadow-lg">
+          <img
+            class="aspect-[4/5] w-full rounded-3xl object-cover"
+            src="./public/images/foto_news/foto_event.jpg"
+            alt="foto event"
+          />
+          <h2
+            class="mt-4 pr-20 text-left text-2xl font-bold xs:pr-32 md:pr-20 md:text-3xl"
+          >
+            Photography Events
+          </h2>
+          <h3 class="my-2 text-xl md:text-2xl">2024-08-08</h3>
+          <p class="mb-4 text-xl md:text-2xl">
+            Don’t miss the exciting photography events coming to your city soon!
+          </p>
+          <button
+            class="my-2 rounded-full bg-medium-purple px-6 py-3 text-lg font-bold text-white shadow-inner-xl hover:bg-opacity-90 md:text-xl"
+            type="button"
+          >
+            NOW
+          </button>
+        </div>
+      </main>
+    </section>
+    <!-- like, comment, generic infos -->
+    <section id="community_feedback" class="bg-remy">
+      <div class="mx-auto max-w-screen-2xl px-4 py-20 xs:py-32">
+        <header class="mb-32 grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div
+            class="flex w-full flex-col items-center justify-start rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/foto_news/foto_köpfe.jpg"
+              alt="kreative köpfe"
+            />
+            <h2 class="mt-4 text-2xl font-bold">"Creative Minds"</h2>
+            <p class="px-8 pb-8 pt-4 text-center text-xl">
+              "Meet the most innovative photographers in the field and get
+              inspired!"
+            </p>
+          </div>
+          <div
+            class="flex w-full flex-col items-center justify-start rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/foto_news/foto_talent.jpg"
+              alt="talentierter visionär"
+            />
+            <h2 class="mt-4 text-center text-2xl font-bold">
+              "Talented Visionaries"
+            </h2>
+            <p class="px-8 pb-8 pt-4 text-center text-xl">
+              "Discover the unique styles and perspectives of our top
+              photographers!"
+            </p>
+          </div>
+          <div
+            class="flex w-full flex-col items-center justify-start rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/foto_news/foto_magier.jpg"
+              alt="fotografie-magier"
+            />
+            <h2 class="mt-4 text-2xl font-bold">"Photography Wizards"</h2>
+            <p class="px-8 pb-8 pt-4 text-center text-xl">
+              "Experience the magic of photography through the lens of our
+              masters!"
+            </p>
+          </div>
+        </header>
+        <main
+          class="mx-auto flex max-w-6xl flex-col justify-center rounded-3xl bg-white shadow-2xl"
+        >
+          <div class="px-6 pt-10 md:px-12 lg:px-20">
+            <h2 class="mb-8 text-3xl font-bold md:text-5xl lg:text-6xl">
+              Like and comment!
+            </h2>
+            <p class="text-xl md:text-2xl lg:text-3xl">
+              "Join in and share your thoughts on the latest photos!"
+            </p>
+            <p class="my-3 text-xl md:text-2xl lg:text-3xl">
+              "Your voice matters—let the photographers know what you think!"
+            </p>
+            <p class="mb-10 text-xl md:text-2xl lg:text-3xl">
+              "Join our creative community and discover new talents!"
+            </p>
+          </div>
+          <img
+            class="rounded-3xl shadow-2xl"
+            src="./public/images/foto_news/like_kommentieren.jpg"
+            alt="liken und kommentieren"
+          />
+        </main>
+        <footer class="mt-32 grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div
+            class="flex w-full flex-col items-center justify-start rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/foto_news/foto_kunst.jpg"
+              alt="kreative köpfe"
+            />
+            <h2 class="mt-4 text-center text-2xl font-bold">Share your art!</h2>
+            <p class="px-8 pb-8 pt-4 text-center text-xl">
+              "Upload your best photos and showcase your talent to the world!"
+            </p>
+          </div>
+          <div
+            class="flex w-full flex-col items-center justify-start rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/foto_news/foto_preis.jpg"
+              alt="talentierter visionär"
+            />
+            <h2 class="mt-4 text-center text-2xl font-bold">
+              "Contests and Prizes"
+            </h2>
+            <p class="px-8 pb-8 pt-4 text-center text-xl">
+              "Participate in exciting contests and win great prizes!"
+            </p>
+          </div>
+          <div
+            class="flex w-full flex-col items-center justify-start rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/foto_news/foto_feedback.jpg"
+              alt="fotografie-magier"
+            />
+            <h2 class="mt-4 text-center text-2xl font-bold">
+              Community-Feedback
+            </h2>
+            <p class="px-8 pb-8 pt-4 text-center text-xl">
+              "Receive valuable feedback from other photographers and improve
+              your skills!"
+            </p>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- join the community -->
+    <section id="gallery" class="bg-medium-rose py-28">
+      <main
+        class="mx-auto flex max-w-screen-2xl flex-col items-center justify-center"
+      >
+        <img
+          class="aspect-square h-44 w-44 rounded-3xl object-cover"
+          src="./public/images/join_community/join_community.jpg"
+          alt="werde teil unserer Fotocommunity"
+        />
+        <h2 class="my-10 text-center text-3xl font-bold xs:px-20 md:text-5xl">
+          "Join our photo community"
+        </h2>
+        <p class="px-6 text-center text-2xl md:text-3xl">
+          "Join us and explore the world of photography"
+        </p>
+        <button
+          onclick="window.open('./public/gallery.html', '_blank', 'noopener, noreferrer');
+"
+          type="button"
+          class="mt-12 rounded-full bg-medium-purple px-6 py-3 text-lg font-bold text-white shadow-inner-xl hover:bg-opacity-50 md:text-2xl"
+        >
+          Join
+        </button>
+      </main>
+    </section>
+    <!-- random images with rolling text - catchphrase -->
+    <section
+      id="catchphrase"
+      class="flex flex-col overflow-x-hidden bg-white py-20 md:gap-10"
+    >
+      <div class="mb-20 flex h-3/4 w-full items-center gap-4">
+        <img
+          class="aspect-[5/3] h-40 -translate-x-80 rounded-3xl object-cover md:h-80 md:-translate-x-44"
+          src="./public/images/catchphrase/catch_1.jpg"
+          alt=""
+        />
+        <img
+          class="aspect-[5/4] h-40 -translate-x-80 rounded-3xl object-cover md:h-96 md:-translate-x-44"
+          src="./public/images/catchphrase/catch_2.jpg"
+          alt=""
+        />
+        <img
+          class="aspect-[9/5] h-28 -translate-x-80 rounded-3xl object-cover md:h-72 md:-translate-x-44"
+          src="./public/images/catchphrase/catch_3.jpg"
+          alt=""
+        />
+        <img
+          class="aspect-[16/9] h-40 -translate-x-80 rounded-3xl object-cover md:h-96 md:-translate-x-44"
+          src="./public/images/catchphrase/catch_4.jpg"
+          alt=""
+        />
+        <img
+          class="aspect-[16/9] h-40 -translate-x-80 rounded-3xl object-cover md:h-96 md:-translate-x-44"
+          src="./public/images/catchphrase/catch_5.jpg"
+          alt=""
+        />
+      </div>
+      <div
+        class="relative overflow-hidden whitespace-nowrap text-3xl font-bold"
+      >
+        <div class="inline-block animate-move">
+          <span class="text-5xl">
+            * Explore Creativity * Breathtaking Visuals * Instant Inspiration *
+            Share Your Moments * Connect with Artists * Capture Life&apos;s
+            Essence
+          </span>
+          <span class="text-5xl"
+            >* Explore Creativity * Breathtaking Visuals * Instant Inspiration *
+            Share Your Moments * Connect with Artists * Capture Life&apos;s
+            Essence
+          </span>
+          <span class="text-5xl"
+            >* Explore Creativity * Breathtaking Visuals * Instant Inspiration *
+            Share Your Moments * Connect with Artists * Capture Life&apos;s
+            Essence
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- voices -->
+    <section id="insights" class="bg-remy">
+      <div class="mx-auto max-w-screen-2xl px-4 py-24 xs:py-32">
+        <h2 class="mb-12 text-center text-5xl font-bold">Voices</h2>
+        <main class="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div
+            class="flex w-full flex-col items-center justify-end rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <p class="px-8 pb-8 pt-4 text-center text-2xl">
+              Fotogram transformed my photography game!
+            </p>
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/voices/juliet_sneider.jpg"
+              alt="kreative köpfe"
+            />
+            <h2 class="mt-4 text-2xl font-bold">Juliet Schneider</h2>
+          </div>
+          <div
+            class="flex w-full flex-col items-center justify-end rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <p class="px-8 pb-8 pt-4 text-center text-2xl">
+              I can&apos;t stop scrolling through these stunning images!
+            </p>
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/voices/chris_watson.jpg"
+              alt="talentierter visionär"
+            />
+            <h2 class="mt-4 text-2xl font-bold">Chris Watson</h2>
+          </div>
+          <div
+            class="flex w-full flex-col items-center justify-end rounded-3xl bg-white p-4 shadow-lg"
+          >
+            <p class="px-8 pb-8 pt-4 text-center text-2xl">
+              A visual feast that keeps me coming back for more!
+            </p>
+            <img
+              class="mt-2 h-20 w-20 rounded-full border-2 border-medium-purple object-cover p-0.5"
+              src="./public/images/voices/Giuliano_Gioia.jpeg"
+              alt="fotografie-magier"
+            />
+            <h2 class="mt-4 text-2xl font-bold">Giuliano Gioia</h2>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- parallax background -->
+    <section
+      id="bg-voices"
+      class="h-screen bg-parallax bg-cover bg-fixed bg-center bg-no-repeat"
+    ></section>
+    <!-- FAQ section -->
+    <section id="faq" class="bg-remy">
+      <div class="mx-auto max-w-screen-lg px-4 py-24 xs:py-32">
+        <main class="rounded-3xl bg-white pb-2 pt-10 shadow-lg">
+          <h2 class="mb-5 text-center text-4xl font-bold md:text-5xl">FAQ</h2>
+
+          <div class="accordion-item">
+            <button
+              class="accordion-header w-full border-b px-4 py-3 text-left font-semibold focus:outline-none md:text-2xl"
+              aria-expanded="false"
+            >
+              What is Fotogram?
+            </button>
+            <div
+              class="accordion-content transition-max-height max-h-0 overflow-hidden duration-300 ease-in-out"
+            >
+              <p class="p-4">
+                Fotogram is a platform where users can share and discover
+                photos.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button
+              class="accordion-header w-full border-b px-4 py-3 text-left font-semibold focus:outline-none md:text-2xl"
+              aria-expanded="false"
+            >
+              How can I upload photos?
+            </button>
+            <div
+              class="accordion-content transition-max-height max-h-0 overflow-hidden duration-300 ease-in-out"
+            >
+              <p class="p-4">
+                To upload photos, create an account and click on the "Upload
+                Photo" button in your profile.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button
+              class="accordion-header w-full border-b px-4 py-3 text-left font-semibold focus:outline-none md:text-2xl"
+              aria-expanded="false"
+            >
+              Is there an app?
+            </button>
+            <div
+              class="accordion-content transition-max-height max-h-0 overflow-hidden duration-300 ease-in-out"
+            >
+              <p class="p-4">
+                Yes, Fotogram offers an app for iOS and Android, available in
+                the App Store and Google Play.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button
+              class="accordion-header w-full border-b px-4 py-3 text-left font-semibold focus:outline-none md:text-2xl"
+              aria-expanded="false"
+            >
+              Can I follow other users?
+            </button>
+            <div
+              class="accordion-content transition-max-height max-h-0 overflow-hidden duration-300 ease-in-out"
+            >
+              <p class="p-4">
+                Yes, you can follow other users to see their latest photos in
+                your feed.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button
+              class="accordion-header w-full px-4 py-3 text-left font-semibold focus:outline-none md:text-2xl"
+            >
+              How often are new photos added?
+            </button>
+            <div
+              class="accordion-content transition-max-height max-h-0 overflow-hidden duration-300 ease-in-out"
+            >
+              <p class="p-4">
+                New photos are uploaded daily by users from around the world.
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- social media section -->
+    <section id="social-media" class="bg-white">
+      <main class="mx-auto max-w-screen-md px-4 py-24 xs:py-32">
+        <h2 class="text-center text-4xl font-bold xs:text-5xl">
+          Follow us on Social Media
+        </h2>
+        <div class="mt-10 flex flex-wrap items-center justify-center">
+          <a href="http://www.facebook.com" target="_blank" title="facebook">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/facebook.png"
+              alt="facebook"
+            /> </a
+          ><a href="http://www.x.com" target="_blank" title="x">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/twitter.png"
+              alt="x"
+            /> </a
+          ><a href="http://www.instagram.com" target="_blank" title="instagram">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/instagram.png"
+              alt="instagram"
+            /> </a
+          ><a href="http://www.linkedin.com" target="_blank" title="linkedin">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/linkedin.png"
+              alt="linkedin"
+            /> </a
+          ><a href="http://www.twitch.com" target="_blank" title="twich">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/twitch.png"
+              alt="twich"
+            />
+          </a>
+        </div>
+      </main>
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="bg-remy pt-24">
+      <h2 class="px-10 text-center text-4xl font-bold">Contact us</h2>
+      <form
+        class="mx-auto mt-12 flex max-w-screen-sm flex-col gap-4 px-4 sm:max-w-screen-md"
+      >
+        <div class="flex flex-col gap-4 lg:flex-row">
+          <input
+            type="text"
+            name="Name"
+            id="fname"
+            class="flex-1 rounded-full border-none py-4 pl-6 text-2xl placeholder-gray-400 shadow-md focus:ring-medium-purple"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            id="fEmail"
+            class="flex-1 rounded-full border-none py-4 pl-6 text-2xl placeholder-gray-400 shadow-md focus:ring-medium-purple"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <textarea
+          placeholder="Message"
+          name="Nachricht"
+          id="fMessage"
+          class="rounded-3xl border-none py-4 pl-6 text-2xl placeholder-gray-400 shadow-md focus:ring-medium-purple"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="mx-auto mt-4 w-44 rounded-full bg-medium-purple px-6 py-4 text-2xl font-bold text-white shadow-inner-xl hover:bg-opacity-50"
+        >
+          Submit
+        </button>
+      </form>
+      <div
+        class="mx-auto flex max-w-screen-2xl flex-col px-4 py-24 xs:py-32 md:flex-row md:gap-10 lg:flex-row"
+      >
+        <div class="flex flex-1 flex-col">
+          <h2 class="text-4xl font-bold">Contact information</h2>
+          <table class="my-10 table-auto text-xl md:text-2xl">
+            <tr>
+              <td>Phone:</td>
+              <td class="text-right">+49 123 456789</td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td class="text-right">info@fotogram.de</td>
+            </tr>
+            <tr>
+              <td class="flex">Address:</td>
+              <td class="text-right">Musterstadt 1, 12345 Berlin</td>
+            </tr>
+            <tr>
+              <td>Openings:</td>
+              <td class="text-right">Mo - Fr: 9am - 9pm</td>
+            </tr>
+          </table>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25187.939317018965!2d41.111137496194395!3d37.895551571203015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400b46fc6e630ad3%3A0x8fba52e2fe61162e!2sBatman%2C%20Batman%20Merkez%2FBatman%2C%20T%C3%BCrkei!5e0!3m2!1sde!2sde!4v1723201913835!5m2!1sde!2sde"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="aspect-[3/5] max-h-96 w-full flex-1 rounded-3xl focus:ring-0 sm:aspect-square sm:h-96"
+        ></iframe>
+      </div>
+    </section>
+    <footer class="bg-black">
+      <div class="mx-auto max-w-screen-2xl px-4 py-24 xs:py-32">
+        <ul
+          class="flex flex-wrap items-center justify-center gap-x-16 gap-y-4 text-white"
+        >
+          <li>
+            <a
+              class="gupter-regular text-2xl hover:text-minsk md:text-4xl"
+              href="./public/imprint.html"
+              target="_blank"
+              >Imprint</a
+            >
+          </li>
+        </ul>
+        <div class="mt-10 flex flex-wrap items-center justify-center">
+          <a href="http://www.facebook.com" target="_blank" title="facebook">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/facebook.png"
+              alt="facebook"
+            /> </a
+          ><a href="http://www.x.com" target="_blank" title="x">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/twitter.png"
+              alt="x"
+            /> </a
+          ><a href="http://www.instagram.com" target="_blank" title="instagram">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/instagram.png"
+              alt="instagram"
+            /> </a
+          ><a href="http://www.linkedin.com" target="_blank" title="linkedIn">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/linkedin.png"
+              alt="linkedIn"
+            /> </a
+          ><a href="http://www.twitch.com" target="_blank" title="twitch">
+            <img
+              class="grayscale hover:grayscale-0"
+              src="./public/social_media/twitch.png"
+              alt="twitch"
+            />
+          </a>
+        </div>
+        <p class="gupter-regular text-center text-xl text-white md:text-2xl">
+          &copy; 2024 Fotogram. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./public/scripts/accordion.js"></script>
+    <script src="./public/scripts/hamburgerMenu.js"></script>
+    <script
+      type="module"
+      src="./public/scripts/intersectionObserver.js"
+    ></script>
+  </body>
+</html>
