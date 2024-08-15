@@ -1,4 +1,4 @@
-# Fotogram
+# Fotogram [![Netlify Status](https://api.netlify.com/api/v1/badges/de0688c4-b196-4f38-92c9-6601cf9d1cbd/deploy-status)](https://app.netlify.com/sites/fotogram-design/deploys)
 
 ![Fotogram Logo](https://raw.githubusercontent.com/mariokreitz/DA_Fotogram/main/preview.png)
 
